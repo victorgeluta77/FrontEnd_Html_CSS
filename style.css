@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.velox-nav{
+    position: relative;
+    width: 1400px;
+    height: 711px;
+    background-color: #3b404c;
+    opacity: 0.5;
+    background-image: url('img/BG.jpg');
+    background-size: cover;
+}
+.velox-nav-logo{
+    width: 130px;
+    height: 38px;
+}
+.velox-nav-logo>img{
+    width: 100%;
+}
+.velox-nav-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.velox-nav-menu>li{
+    width: 55px;
+    height: 12px;
+    opacity: 0.69;
+    color: #ffffff;
+    font-family: "Open Sans - Semibold";
+    font-size: 14px;
+    font-weight: 400;
+    list-style-type: none;
+}
+.valox-nav-logo-menu{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1170px;
+    height: 38px;
+    margin-left: 115px;
+    margin-top: 24px;
+    margin-right: 115px;
+}
+.velox-nav-menu>li:nth-of-type(4){
+    margin-right: 48px;
+}
+.velox-nav-menu>li:nth-of-type(3){
+    margin-right: 62px;
+}
+.velox-nav-menu>li:nth-of-type(2){
+    margin-right: 59px;
+}
+.velox-nav-menu>li:nth-of-type(1){
+    margin-right: 62px;
+}
+.velox-nav-h1-title{
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 351px;
+    width: 698px;
+height: 61px;
+color: #ffffff;
+font-family: Lora;
+font-size: 58px;
+font-weight: 700;
+line-height: 23px;
+}
