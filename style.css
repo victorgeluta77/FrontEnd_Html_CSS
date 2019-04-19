@@ -3,28 +3,50 @@
     padding: 0;
     box-sizing: border-box;
 }
-.velox-nav{
+/*для перевірки візуального розміщення блоків*/
+:root{
+    --border-color:1px solid orange;
+    --z-index-max:999;
+    --z-index-min:0;
+}
+/* блок навігації*/
+.nav{
+    margin: 0 auto;
     position: relative;
-    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: auto;
     height: 711px;
-    background-color: #3b404c;
-    opacity: 0.5;
-    background-image: url('img/BG.jpg');
+    background-image: url('img/bg_head.png');
     background-size: cover;
 }
-.velox-nav-logo{
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #3b404c;
+    opacity: 0.5;
+    z-index: var(--z-index-min);
+}
+.nav_logo{
     width: 130px;
     height: 38px;
+    z-index: 999;
 }
-.velox-nav-logo>img{
+.nav_logo>img{
     width: 100%;
 }
-.velox-nav-menu{
+.nav_menu{
     display: flex;
     flex-direction: row;
     align-items: center;
+    z-index: var(--z-index-max);
 }
-.velox-nav-menu>li{
+.nav_menu>li{
     width: 55px;
     height: 12px;
     opacity: 0.69;
@@ -34,39 +56,258 @@
     font-weight: 400;
     list-style-type: none;
 }
-.valox-nav-logo-menu{
-    position: absolute;
+/* блок лого та меню*/
+.nav_logo_menu{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 1170px;
     height: 38px;
-    margin-left: 115px;
     margin-top: 24px;
-    margin-right: 115px;
+
 }
-.velox-nav-menu>li:nth-of-type(4){
+.nav_menu>li:nth-of-type(4){
     margin-right: 48px;
 }
-.velox-nav-menu>li:nth-of-type(3){
+.nav_menu>li:nth-of-type(3){
     margin-right: 62px;
 }
-.velox-nav-menu>li:nth-of-type(2){
+.nav_menu>li:nth-of-type(2){
     margin-right: 59px;
 }
-.velox-nav-menu>li:nth-of-type(1){
+.nav_menu>li:nth-of-type(1){
     margin-right: 62px;
 }
-.velox-nav-h1-title{
-    position: absolute;
-    margin-top: 280px;
-    margin-left: 351px;
+.nav_h1_title{
+    margin-top: 218px;
     width: 698px;
-height: 61px;
-color: #ffffff;
-font-family: Lora;
-font-size: 58px;
-font-weight: 700;
-line-height: 23px;
+    color: #ffffff;
+    font-family: Lora;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 23px;
+    z-index: var(--z-index-max);
 }
+.nav_p_txt{
+    width: 600px;
+    height: 26px;
+    margin-top: 34px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 23px;
+    z-index: var(--z-index-max);
+}
+.nav_button{
+    margin-top: 88px;
+    color: #ffffff;
+    font-family: "Open Sans - Semibold";
+    font-size: 25px;
+    font-weight: 400;
+    width: 320px;
+    height: 72px;
+    border: 1px solid #00a5ff;
+    border-radius: 36px;
+    background-color: #00a5ff;
+    z-index: var(--z-index-max);
+}
+/*кінець блоку навігації*/
+/*блок main*/
+.main{
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+}
+/* блок Servis*/
+.main_servis{
+    margin: 73px auto;
+    width: 1167px;
+    height: 367px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.main_servis_p{
+    width: 304px;
+    height: 32px;
+    color: #3a3f4b;
+    font-family: Lora;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.main_servis_bar{
+    margin-top: 29px;
+    width: 147px;
+    height: 4px;
+    background-color: #00a5ff;
+}
+.main_servis_list{
+    margin-top: 98px;
+    width: 1167px;
+    height: 204px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.servis_list_geom{
+    width: 252px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    }
+.servis_list_logo{
+    width: 81px;
+    height: 81px;
+    background-color: #f5f6f8;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.servis_list_h2{
+    margin-top: 18px;
+    width: 153px;
+    height: 14px;
+    color: #3a3f4b;
+    font-family: "Source Sans Pro - Semibold";
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+/* Text style for "Logo DESIG" */
+    letter-spacing: 1.35px;
+    text-align: center;
+}
+.servis_list_line{
+    width: 41px;
+    height: 2px;
+    border: 3px solid #6a6a6a;
+    margin-top: 19px;
+}
+.servis_list_text{
+    margin-top: 17px;
+    width: 252px;
+    color: #999999;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+/* Text style for "L, orem Ip" */
+    letter-spacing: 0.9px;
+    text-align: center;
+}
+/*кінець блоку Servis*/
+/*початок блоку Portfolio*/
+.main_portfolio{
+    margin-top: 57px;
+    width: auto;
+    height: 1153px;
+    background-color: #f5f6f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+.main_portfolio_p{
+    margin-top: 46px;
+    width: 239px;
+    height: 31px;
+    color: #3a3f4b;
+    font-family: 'Lora', serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.main_portfolio_bar{
+    margin-top: 29px;
+    width: 145px;
+    height: 2px;
+    border:1px solid #00a5ff;
+}
+.main_portfolio_nav{
+    margin-top: 63px;
+    width: 549px;
+    height: 10px;
+    color: #999999;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+/* Text style for "Branding" */
+    text-transform: uppercase;
+
+}
+.main_portfolio_nav_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.main_portfolio_nav_menu>li{
+    list-style: none;
+}
+.main_portfolio_nav_menu>li:nth-of-type(1){
+    color: #00a5ff;
+}
+.main_portfolio_course{
+    margin-top: 63px;
+    width: 1169px;
+    height: 715px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main_portfolio_course_h3{
+    margin-top: -12px;
+    width: 380px;
+    height: 76px;
+    background-color: #f4f5f9;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+.main_portfolio_course_h3_txt{
+    padding-top: 29px;
+    padding-left: 34px;
+    height: 18px;
+    color: #999999;
+    font-family: "Open Sans - Semibold";
+    font-size: 18px;
+    font-weight: 400;
+}
+.main_portfolio_button{
+    margin-top: 62px;
+    width: 280px;
+    height: 63px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+    background-color: #00a5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.portfolio_button_show_more{
+    width: 163px;
+    height: 19px;
+    color: #ffffff;
+    font-family: "Open Sans - Semibold";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+/*кінець блоку Portfolio*/
+
+
