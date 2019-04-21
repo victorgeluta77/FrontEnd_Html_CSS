@@ -312,7 +312,7 @@
 /*початок блоку Brands*/
 .main_brands{
     margin: 67px auto;
-    width: 1169px;
+    max-width: 1169px;
     height: 237px;
     display: flex;
     flex-direction: column;
@@ -320,7 +320,7 @@
     align-items: center;
 }
 .main_brands_h4{
-    width: 823px;
+    max-width: 823px;
     height: 33px;
     color: #3a3f4b;
     font-family: Lora;
@@ -356,3 +356,324 @@
 .main_brands_logo>img:nth-of-type(6){
     margin-bottom: 24px;
 }
+/*кінець блоку Brands*/
+/*початок блоку AboutUs*/
+.main_aboutUs{
+    margin-top: 126px;
+    height: auto;
+    background-color: #f5f6f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main_aboutUs_h5{
+    margin-top: 65px;
+    width: 883px;
+    height: 31px;
+    color: #3a3f4b;
+    font-family: Lora;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.main_aboutUs_bar{
+    margin-top: 29px;
+    width: 147px;
+    height: 4px;
+    background-color: #00a5ff;
+}
+.main_aboutUs_slider{
+    margin-top: 59px;
+    width: 1112px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+.main_aboutUs_slider_dani{
+    width: 557px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main_aboutUs_slider_img{
+    width: 509px;
+    height: 135px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_aboutUs_slider_p{
+    width: 557px;
+    color: #3a3f4b;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+/* Text style for "“Lorem ips" */
+    font-family: "Lora - Regular";
+}
+.main_aboutUs_slider_p_link{
+    /* Text style for "" */
+    font-family: Roboto;
+    font-weight: 300;
+    margin-top: 50px;
+}
+.main_aboutUs_slider_p_link>a{
+    color: #3a3f4b;
+}
+.main_aboutUs_slider_img>img:nth-of-type(1){
+    width: 109px;
+    height: 109px;
+    opacity: 0.5;
+}
+.main_aboutUs_slider_img>img:nth-of-type(3){
+    width: 104px;
+    height: 109px;
+    opacity: 0.5;
+}
+.main_aboutUs_bullets{
+    margin-top: 64px;
+    margin-bottom: 69px;
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main_aboutsUs_bullets_point:nth-of-type(1){
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: #999999;
+}
+.main_aboutsUs_bullets_point:nth-of-type(2){
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: #999999;
+}
+.main_aboutsUs_bullets_point:nth-of-type(3){
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: #202635;
+}
+/*кінець блоку AboutUs*/
+/*початок блоку Contct Us*/
+.main_contactUs{
+    height: 709px;
+    background-color: #3b404c;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main_contactUs_dani{
+    margin-top: 84px;
+    width: 309px;
+    display: flex;
+    flex-direction: column;
+}
+.main_contactUs_main{
+    color: #ffffff;
+    font-family: Lora;
+    font-weight: 700;
+    font-size: 25px;
+}
+.contactUs_adress{
+    margin-top: 100px;
+    color: #ffffff;
+    font-family: "Open Sans - Semibold";
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.contactUs_adress_text{
+    margin-top: 29px;
+    color: #999999;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.contactUs_call{
+    margin-top: 68px;
+    color: #ffffff;
+    font-family: "Open Sans - Semibold";
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.contactUs_call_text{
+    margin-top: 30px;
+    color: #999999;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.contactUs_email{
+    margin-top: 68px;
+    color: #ffffff;
+    font-family: "Open Sans - Semibold";
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.contactUs_email_text{
+    margin-top: 28px;
+    color: #999999;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+}
+.main_contactUs_menuMess{
+    margin-top: 87px;
+    margin-left: 95px;
+    width: 769px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-end;
+}
+.main_contactUs_menu_ul{
+    width: 456px;
+    height: 21px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 21px;
+    font-weight: 400;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main_contactUs_message{
+    margin-top: 112px;
+    display: flex;
+    flex-direction: row;
+}
+.main_contactUs_message_form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.message_form_name{
+    width: 360px;
+    height: 30px;
+    background-color: #3b404c;
+    border-bottom-color: #00a5ff;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-style: none;
+    caret-color: #ffffff;
+    color: #ffffff;
+    outline-style: none;
+}
+.message_form_subject{
+    margin-left: 0px;
+    width: 360px;
+    height: 30px;
+    background-color: #3b404c;
+    border-bottom-color: #999999;;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-style: none;
+    caret-color: #ffffff;
+    color: #ffffff;
+    outline-style: none;
+}
+
+.name_label{
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38.64px;
+}
+.subject_label{
+    margin-left: 0px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 38.64px;
+}
+.message_form_message{
+    width: 768px;
+    height: 139px;
+    background-color: #3b404c;
+    border-bottom-color: #999999;;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-style: none;
+    caret-color: #ffffff;
+    color: #ffffff;
+    outline-style: none;
+}
+.message_label{
+    margin-top: 62px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38.64px;
+}
+.message_form_button{
+    margin-top: 31px;
+    width: 280px;
+    height: 63px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    border: 0px;
+    border-radius: 32px;
+    background-color: #00a5ff;
+    color: #ffffff;
+    font-family: "Open Sans - Semibold";
+    font-size: 25px;
+    font-weight: 400;
+}
+/*кінець блоку Contct Us*/
+/* footer*/
+.footer{
+    margin: -28px auto;
+    margin-bottom: 28px;
+    max-width: 1168px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer_arrow{
+    width: 67px;
+    height: 67px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    background-color: #00a5ff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_soc_author{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_author{
+    width: 147px;
+    height: 10px;
+    color: #999999;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+}
+/* кінець footer*/
